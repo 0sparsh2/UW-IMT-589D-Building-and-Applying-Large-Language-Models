@@ -1,1 +1,38 @@
+*Question 1-1: Take a query as an example and show how maximum likelihood approach works with a document
+as a language model.*
 
+Based on the understanding from A General Language Model for Information Retrieval (Song & Croft, 1999), while querying a document, we would want to infer the probability of each element of a query over the whole document. 
+For simplicity, let's assume a basic bag-of-words model where the likelihood is the product of the probabilities of each word occurring in the document.
+
+Document: "This apple pie recipe is delicious."
+And our query is: "apple pie recipe".
+
+We can find the probability of each word of query in our document
+
+P(apple|Document) = 1/6
+P(pie|Document) = 1/6
+P(recipe|Document) = 1/6
+
+For the whole query combined, the total probability this way would result in the product of individual probabilities.
+= 1/6 * 1/6 * 1/6
+This calculation indicates the likelihood of generating a query from the document model based on term occurrence. 
+
+--------------
+
+*Question 1-2: Why would you want to expand a document model with a corpus model? How would you do that?*
+
+The reading suggests that expanding a document model with a corpus model is beneficial to address the issue of
+data sparsity and to differentiate the contributions of different missing terms, thereby providing a more accurate
+estimation of term probabilities. 
+
+The expansion of a document is important to incorporate the issue of data sparsity and the missing terms within a document. 
+Terms that don't occur frequently in a document benefit from this method. 
+Two major ways of resolving this would be the weighted sum approach (interpolation and the weighted product approach.
+
+In the weighted sum approach, 
+Each piece of evidence or data source is assigned a weight based on its importance or relevance to the query. The weighted values from all sources are summed up to obtain a composite score.
+
+The weighted product approach is similar but uses multiplication instead of addition,
+Each piece of evidence is raised to the power of its assigned weight. The weighted values are then multiplied together to obtain an overall score.
+
+Both approaches allow the integration of multiple sources of information, giving more influence to the most relevant ones through the assigned weights. The weighted sum is simpler but can be dominated by large values, while the weighted product is compensated by multiplying and is better for probabilities

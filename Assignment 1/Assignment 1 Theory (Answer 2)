@@ -1,0 +1,2 @@
+Based on the results generated in the Trigram code, we can notice that the words generated are partly closer to the words in english vocabulary. 
+This happens since the probility of correctly choose the next word later in the word improves as it relies on 2 characters sequence over just 1 (Bigram)

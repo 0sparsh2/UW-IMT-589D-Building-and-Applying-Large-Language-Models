@@ -1,0 +1,7 @@
+1. Language models (LMs) are used in various fields, including IR and NLP. Use the explanation/definition of LM in one field to explain them in the other in a couple of paragraphs (no more than half a page). Start by reading the assigned readings this week and see what are some of the fundamental aspects of an LM, regardless of its application. Do not copy things from any of the articles or other places on the Internet (generated or found). Instead, use your own words to explain, as if you are asked this question in a job interview. [4 points]
+
+2. We used negative log-likelihood in the class to compute the loss. Figure out how to compute the loss using cross entropy and run the same experiments. Report your loss and comment on how this compares to what we did in the class. Provide a snippet of your code where you compute the loss and give your explanation in a few (2-4) sentences. [3 points]
+
+3. Repeat what we did in the class (building a simple neural network for predicting next character) for trigrams. This means given a pair of characters (input), you want the next character in that sequence (output). The main thing you have to figure out is how you would represent the input. Provide only the parts of your code where things are different from bigram to trigram. Do you see better results as computed by a loss measure? [3 points]
+
+Submit a single PDF file with no more than 2 pages in length. Any other format or late submission will not be graded.

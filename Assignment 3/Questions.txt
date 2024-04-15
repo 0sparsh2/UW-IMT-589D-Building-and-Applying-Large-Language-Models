@@ -1,0 +1,7 @@
+1. Describe in your own words (one-two paragraphs, half a page max) what problems an LSTM architecture addresses and how. [3 points]
+
+2. Yin et al. paper describes experiments involving various neural architectures. Describe in your own words (one-two paragraphs, half a page max) when and why/how GRU outperformed CNN. [3 points]
+
+3. Use keras.datasets.cifar10.load_data() to load the CIFAR-10 dataset. Build an LSTM model to classify CIFAR images and report the performance of your model. [4 points]
+
+Submit a single PDF file with no more than 2 pages in length. Any other format or late submission will not be graded.
